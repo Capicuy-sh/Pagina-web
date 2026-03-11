@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo Histórico - Javier Martínez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="inicio" class="seccion">
+        <h1>📜 Archivo Histórico Digital</h1>
+        <p>Cronología desde la Gran Guerra hasta la era del Internet.</p>
+        
+        <div class="tarjetas">
+            <div class="card" onclick="abrirArticulo()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pluma-papiro.png/200px-Pluma-papiro.png" alt="Historia">
+                <h2>Grandes Hitos de la Historia</h2>
+                <p>200 párrafos de pura historia universal.</p>
+            </div>
+        </div>
+
+        <button class="btn-quiz" onclick="abrirQuiz()">📝 Iniciar Gran Quiz (20 preguntas)</button>
+        
+        <footer>
+            <p>Estudiante: <strong>Javier Martínez</strong></p>
+        </footer>
+    </div>
+
+    <div id="articulo" class="seccion oculto">
+        <button class="btn-volver" onclick="volver()">⬅ Volver</button>
+        <div id="contenido-wiki" class="wiki-style"></div>
+        
+        <hr>
+        <div class="bibliografia">
+            <h3>📚 Bibliografía Consultada</h3>
+            <ul>
+                <li>Enciclopedia Británica - Primera Guerra Mundial y Adolf Hitler.</li>
+                <li>History Channel Archive - Atentados del 11 de Septiembre.</li>
+                <li>Journal of Digital Culture - Evolución del "Brainrot" y contenido viral.</li>
+                <li>Wikipedia Foundation - Datos cronológicos generales.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="quiz" class="seccion oculto">
+        <button class="btn-volver" onclick="volver()">⬅ Salir</button>
+        <div class="quiz-box">
+            <p id="q-progreso" class="progreso-texto"></p>
+            <h2 id="q-texto"></h2>
+            <div id="q-opciones"></div>
+            <div id="q-feedback" class="oculto"></div>
+            <button id="btn-siguiente" class="btn-siguiente oculto" onclick="siguientePregunta()">Siguiente ➡</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
