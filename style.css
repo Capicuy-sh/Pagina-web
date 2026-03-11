@@ -1,0 +1,25 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background-color: #e8e4d9; color: #2c2c2c; font-family: 'Georgia', serif; padding: 20px; display: flex; justify-content: center; }
+
+.seccion { width: 100%; max-width: 900px; background: #fdfbf5; padding: 40px; border-radius: 5px; box-shadow: 5px 5px 15px rgba(0,0,0,0.1); border: 1px solid #d3cbb8; }
+.oculto { display: none !important; }
+
+h1 { text-align: center; color: #5d4037; border-bottom: 2px solid #5d4037; padding-bottom: 10px; }
+.tarjetas { display: flex; justify-content: center; margin: 30px 0; }
+.card { border: 1px dashed #5d4037; padding: 20px; text-align: center; cursor: pointer; transition: 0.3s; background: #fff; width: 300px; }
+.card:hover { background: #f5f0e1; transform: scale(1.02); }
+
+.btn-quiz { width: 100%; background: #5d4037; color: white; padding: 15px; border: none; cursor: pointer; font-size: 1.1rem; }
+.btn-volver { background: #8d6e63; color: white; border: none; padding: 8px 15px; cursor: pointer; margin-bottom: 20px; }
+
+/* Contenido de Historia */
+.wiki-style p { margin-bottom: 1.2rem; line-height: 1.6; text-align: justify; }
+.wiki-style img { width: 100%; height: 300px; object-fit: cover; border: 5px solid #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.2); margin: 20px 0; }
+
+.bibliografia { margin-top: 40px; padding: 20px; background: #eee; font-size: 0.9rem; }
+footer { margin-top: 30px; text-align: center; border-top: 1px solid #ccc; padding-top: 10px; }
+
+/* Quiz */
+.opcion-btn { display: block; width: 100%; padding: 12px; margin: 8px 0; background: #fff; border: 1px solid #8d6e63; cursor: pointer; text-align: left; }
+.feedback-correcto { background: #dcedc8; padding: 10px; border: 1px solid #558b2f; margin-top: 10px; }
+.feedback-incorrecto { background: #ffcdd2; padding: 10px; border: 1px solid #c62828; margin-top: 10px; }
